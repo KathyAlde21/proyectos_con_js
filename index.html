@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos realizados con HTML y CSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="https://github.com/KathyAlde21"
+                target="_blank" rel="noopener">
+                <img src="./assets/img/github.png" alt="GitHub Logo" width="20" height="20" class="icon-github"
+                    loading="lazy">
+                <span>GitHub</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./aerolinea/index.html">AeroVia Express</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./autofix/index.html">AutoFix</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cineflash/index.html">CineFlash</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./formulario-de-registro/index.html">Formulario</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div style="height: 56px;"></div> <!-- Espacio para navbar fija -->
+
+    <main class="projects-home">
+        <section class="hero-projects">
+            <div class="container">
+                <div class="hero-projects_content">
+                    <p class="hero-projects_kicker">Portafolio de práctica</p>
+                    <h1 class="hero-projects_title">Proyectos desarrollados con JavaScript</h1>
+                    <p class="hero-projects_text">
+                        <!-- agregar card con estos 4 -->
+                        Esta página reúne proyectos de práctica , 4 de ellos provienen de un proyecto desarrollado
+                        con HTML, CSS y Bootstrap, el proposito es darle funcionalidad.
+                    </p> 
+
+                    <p class="hero-projects_text">
+                        <!-- en card diferente los nuevos proyectos -->
+                        Se incorporan proyectos con manjo de api
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-grid-section">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <article class="project-card h-100">
+                            <img src="./assets/img/aerolinea-portada.png" class="project-card_img"
+                                alt="Vista previa del proyecto AeroVia Express">
+                            <div class="project-card_body">
+                                <span class="project-card_tag">HTML / CSS / Bootstrap</span>
+                                <h2 class="project-card_title">AeroVia Express</h2>
+                                <p class="project-card_text">
+                                    Landing inspirada en una aerolínea, con promoción principal, navegación superior
+                                    y formulario visual de búsqueda de viajes.
+                                </p>
+                                <a href="./aerolinea/index.html" class="project-card_btn">Ver proyecto</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <article class="project-card h-100">
+                            <img src="./assets/img/autofix-portada.png" class="project-card_img"
+                                alt="Vista previa del proyecto AutoFix">
+                            <div class="project-card_body">
+                                <span class="project-card_tag">HTML / CSS / Bootstrap</span>
+                                <h2 class="project-card_title">AutoFix</h2>
+                                <p class="project-card_text">
+                                    Sitio de servicios automotrices con sección de precios, formulario de solicitud
+                                    y flujo visual orientado a reserva de reparación.
+                                </p>
+                                <a href="./autofix/index.html" class="project-card_btn">Ver proyecto</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <article class="project-card h-100">
+                            <img src="./assets/img/cineflash-portada.png" class="project-card_img"
+                                alt="Vista previa del proyecto CineFlash">
+                            <div class="project-card_body">
+                                <span class="project-card_tag">HTML / CSS / Bootstrap</span>
+                                <h2 class="project-card_title">CineFlash</h2>
+                                <p class="project-card_text">
+                                    Propuesta visual basada en cine y entretenimiento, pensada para mostrar estructura,
+                                    jerarquía de contenido y presentación de carteleras o funciones.
+                                </p>
+                                <a href="./cineflash/index.html" class="project-card_btn">Ver proyecto</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <article class="project-card h-100">
+                            <img src="./assets/img/formulario-portada.png" class="project-card_img"
+                                alt="Vista previa del proyecto Formulario de Registro">
+                            <div class="project-card_body">
+                                <span class="project-card_tag">HTML / CSS / Bootstrap</span>
+                                <h2 class="project-card_title">Formulario</h2>
+                                <p class="project-card_text">
+                                    Interfaz centrada en el registro de datos, con foco en estructura, campos,
+                                    orden visual y experiencia básica de formulario.
+                                </p>
+                                <a href="./formulario-de-registro/index.html" class="project-card_btn">Ver proyecto</a>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <div style="height: 56px;"></div> <!-- Espacio sobre el footer garantizado -->
+    <footer class="bg-dark text-light">
+        <div class="container py-2">
+            <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap">
+                <p class="mb-0">&copy; 2026 Kathy Alderete</p>
+                <a class="btn btn-outline-light btn-sm d-flex align-items-center gap-2"
+                    href="https://github.com/KathyAlde21" target="_blank" rel="noopener">
+                    <img src="./assets/img/github.png" alt="GitHub Logo" width="20" height="20" class="icon-github"
+                        loading="lazy">
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
