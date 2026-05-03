@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroVia Express</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="https://github.com/KathyAlde21"
+                target="_blank" rel="noopener">
+                <img src="./assets/img/github.png" alt="GitHub Logo" width="20" height="20" class="icon-github"
+                    loading="lazy">
+                <span>GitHub</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto w-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">AeroVia Express</a>
+                    </li>
+                    <!-- primer desplegable -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Ofertas y destinos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Oferta especial</a></li>
+                            <li><a class="dropdown-item" href="#">Destinos populares</a></li>
+                        </ul>
+                    </li>
+                    <!-- segundo desplegable -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Mis viajes
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Historial de viajes</a></li>
+                        </ul>
+                    </li>
+                    <!-- fin desplegables -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Centro de ayuda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Estado de vuelo</a>
+                    </li>
+                </ul>
+                <!-- boton iniciar sesion -->
+                <div class="d-flex align-items-center gap-2 ms-3">
+                    <button class="btn btn-outline-primary" type="submit">Iniciar Sesión</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div style="height: 56px;"></div> <!-- Espacio para navbar fija -->
+
+    <main class="container-fluid px-0">
+        <section class="promo-section">
+            <div class="card promo-card overflow-hidden">
+                <div class="row g-0">
+                    <div class="col-12 col-md-5 d-flex align-items-center justify-content-center">
+                        <img src="./assets/img/polynesia.jpg" class="promo-img" alt="polynesia">
+                    </div>
+                    <div class="col-12 col-md-7 mt-3">
+                        <!-- link retorno a web principal -->
+                        <div class="back-to-home d-grid gap-2 d-md-flex justify-content-md-end">
+                                <!-- <button class=" btn me-md-2" type="button"> -->
+                            <a href="../index.html" class="btn-back">← Volver a proyectos</a>
+                            </button>
+                        </div>
+                        <!-- fin link -->
+                        <div class="card-body d-flex flex-column justify-content-center h-125 px-4 px-md-5 py-4">
+                            <h2 class="card-title">¡Vacaciones de verano!</h2>
+                            <p class="card-text mt-3">Vuela por todo Chile y Sudamérica con hasta 40% de descuento.</p>
+                            <p class="card-text">Encuentra paquetes, hoteles, seguros y arriendo de autos en AeroVia
+                                Express.
+                            </p>
+                            <a 
+                                href="#formViajes"
+                                class="btn mt-3 align-self-start link-primary" 
+                                id="btnIniciarSesion">
+                                Compra aquí
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- formulario -->
+        <section class="search-section">
+            <div class="mb-5 mt-5" id="formViajes">
+                <!-- primer y segundo segmento - imito lista navbar con ul-li -->
+                <div class="container d-flex flex-column">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#vuelos" id="vuelos">Vuelos</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#paquetes" id="paquetes">Paquetes</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#hoteles" id="hoteles">Hoteles</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#autos" id="autos">Autos</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#seguros" id="seguros">Seguros</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#upgrade" id="upgrade">Upgrade</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex flex-wrap gap-3 mb-4" id="opcionesBusqueda">
+                        <select id="tipoViaje" class="form-select w-auto">
+                            <option value="ida-vuelta">Ida y vuelta</option>
+                            <option value="solo-ida">Solo ida</option>
+                        </select>                        
+                        <select id="cabina" class="form-select w-auto">
+                            <option value="economy">Economy</option>
+                            <option value="premium">Premium Economy</option>
+                        </select>
+                        <select id="cantidadPasajeros" class="form-select w-auto">
+                            <option value="1">1 pasajero</option>
+                            <option value="2">2 pasajeros</option>
+                            <option value="3">3 pasajeros</option>
+                            <option value="4">4 pasajeros</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- tercer segmento -->
+                <form id="formBusquedaVuelos" class="search-bar d-flex gap-3 flex-wrap">
+                    <input type="text" class="form-control custom-small-input" id="origenVuelo" placeholder="Origen" required>
+                    <input type="text" class="form-control custom-small-input" id="destinoVuelo" placeholder="Destino" required>
+                    <input type="date" class="form-control custom-date-input" id="fechaIda" required>
+                    <input type="date" class="form-control custom-date-input" id="fechaVuelta" required>
+                    <button type="submit" class="btn btn-danger">Buscar</button>
+                </form>   
+                <p id="mensajeBusqueda" class="mt-3 text-center"></p>
+            </div>
+        </section>
+        <section class="container py-4">
+            <div id="resumenBusqueda" class="mb-4 d-none"></div>
+            <div id="resultadosVuelos" class="row g-4"></div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <div style="height: 56px;"></div> <!-- Espacio sobre el footer garantizado -->
+    <footer class="bg-dark text-light">
+        <div class="container py-2">
+            <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap">
+                <p class="mb-0">&copy; 2026 Kathy Alderete</p>
+                <a class="btn btn-outline-light btn-sm d-flex align-items-center gap-2"
+                    href="https://github.com/KathyAlde21" target="_blank" rel="noopener">
+                    <img src="./assets/img/github.png" alt="GitHub Logo" width="20" height="20" class="icon-github"
+                        loading="lazy">
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

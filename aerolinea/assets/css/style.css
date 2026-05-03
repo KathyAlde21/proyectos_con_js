@@ -1,0 +1,56 @@
+.card {
+    background-color: #62DAD3;
+}
+
+.promo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#navbarCollapse {
+    text-align: center;
+}
+
+.search-section {
+    width: 100%;
+    padding: 40px 16px;
+}
+
+#formViajes {
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 30px 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0;
+}
+
+.custom-small-input,
+.custom-date-input {
+    flex: 1 1 140px;
+    min-width: 120px;
+}
+/* Estilos para el botón de volver a proyectos */
+.back-to-home {
+    padding: 1rem 0 0;
+}
+
+.btn-back {
+    display: inline-block;
+    padding: 0.7rem 1.1rem;
+    border: 1px solid #b6b6b6;
+    border-radius: 0.6rem;
+    background-color: #c4f2f8cb;
+    color: #222222;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.25s ease;
+}
+
+.btn-back:hover {
+    background-color: #ffffff;
+    border-color: #999999;
+}
